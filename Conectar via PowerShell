@@ -1,0 +1,5 @@
+🔌 Conectar no Exchange Online como admin (coloca o seu e-mail)
+
+### (Primeira vez) Instalar o módulo
+Se já tiver instalado, pula.
+Install-Module ExchangeOnlineManagement -Scope CurrentUser
