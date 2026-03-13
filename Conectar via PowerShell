@@ -1,5 +1,23 @@
-🔌 Conectar no Exchange Online como admin (coloca o seu e-mail)
+## 🔌 Conectar no Exchange Online (Admin)
 
-### (Primeira vez) Instalar o módulo
-Se já tiver instalado, pula.
+Conecte ao Exchange Online utilizando uma conta administrativa do Microsoft 365.
+
+---
+
+## 📦 (Primeira vez) Instalar o módulo
+
+Se o módulo ainda não estiver instalado, execute:
+
 Install-Module ExchangeOnlineManagement -Scope CurrentUser
+
+Se já estiver instalado, pode pular esta etapa.
+
+## 🔐 Conectar forçando a conta correta
+Connect-ExchangeOnline -UserPrincipalName seuemail@empresa.com
+
+✔ Abre a tela de login diretamente na autenticação
+✔ MFA funciona normalmente
+✔ Evita conflito com outras contas logadas no Windows
+
+✅ Conferir se conectou no tenant correto (opcional, recomendado)
+Get-OrganizationConfig | Select Name
