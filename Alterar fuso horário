@@ -1,6 +1,6 @@
-O Exchange **não usa GMT-3 direto**, ele usa o identificador:
+O Exchange não usa GMT-3 direto, ele usa o identificador:
 
-👉 ##`E. South America Standard Time`
+👉 `E. South America Standard Time`
 
 Esse é o *Horário de Brasília* (sem horário de verão, RIP).
 
@@ -15,7 +15,7 @@ Set-MailboxRegionalConfiguration -Identity usuario@suaempresa.com `
 - Fuso horário
 - Idioma
 - Formato de data/hora
-✔ Impacta **OWA e calendário**
+✔ Impacta OWA e calendário
 
 🔹 Opção 2 — Atualizar TODAS as caixas (usuários + recursos)
 ⚠️ Use com cuidado.
@@ -48,8 +48,8 @@ Você deve ver: TimeZone : E. South America Standard Time
 
 ## ⚠️ Observações importantes
 
-- Isso **não altera eventos antigos já criados**
-- Afeta **OWA e novos eventos**
+- Isso não altera eventos antigos já criados
+- Afeta OWA e novos eventos
 - Outlook Desktop:
-    - O cliente **usa o fuso do Windows**
+    - O cliente usa o fuso do Windows
     - Se o Windows estiver errado, o Outlook vai continuar errado
